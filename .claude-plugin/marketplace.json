@@ -1,0 +1,18 @@
+{
+  "description": "Personal Claude Code skills, published as installable plugins.",
+  "name": "ira-claude-plugins",
+  "owner": {
+    "name": "Ira Abramov"
+  },
+  "plugins": [
+    {
+      "author": {
+        "name": "Ira Abramov"
+      },
+      "description": "Vet a third-party agent artifact (skill, plugin, MCP server) before installing it locally.",
+      "name": "test-before-install",
+      "source": "./plugins/test-before-install",
+      "version": "1.0.0"
+    }
+  ]
+}

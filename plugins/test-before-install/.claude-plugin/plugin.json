@@ -1,0 +1,5 @@
+{
+  "description": "Vet a third-party agent artifact (skill, plugin, MCP server) before installing it locally.",
+  "name": "test-before-install",
+  "version": "1.0.0"
+}
