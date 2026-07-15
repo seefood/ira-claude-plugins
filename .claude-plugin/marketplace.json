@@ -13,6 +13,15 @@
       "name": "test-before-install",
       "source": "./plugins/test-before-install",
       "version": "1.0.0"
+    },
+    {
+      "author": {
+        "name": "Ira Abramov"
+      },
+      "description": "Convert JSON command output to compact TOON notation before it enters the conversation, to save ingestion tokens.",
+      "name": "json-to-toon",
+      "source": "./plugins/json-to-toon",
+      "version": "1.0.0"
     }
   ]
 }

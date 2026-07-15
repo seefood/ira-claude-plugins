@@ -1,0 +1,8 @@
+{
+  "author": {
+    "name": "Ira Abramov"
+  },
+  "description": "Convert JSON command output to compact TOON notation before it enters the conversation, to save ingestion tokens.",
+  "name": "json-to-toon",
+  "version": "1.0.0"
+}

@@ -8,6 +8,7 @@ installable plugin marketplace.
 ```
 /plugin marketplace add seefood/ira-claude-plugins
 /plugin install test-before-install@ira-claude-plugins
+/plugin install json-to-toon@ira-claude-plugins
 ```
 
 ## Plugins
@@ -21,6 +22,17 @@ type-appropriate scanners in isolation, verifies findings by hand, and reports
 a verdict with the side effects to consent to.
 
 See [`plugins/test-before-install/skills/test-before-install/SKILL.md`](plugins/test-before-install/skills/test-before-install/SKILL.md).
+
+### json-to-toon
+
+Converts JSON command output (AWS CLI, `kubectl -o json`, `terraform show
+-json`, `snyk-agent-scan --json`, etc.) to compact TOON notation before it
+enters the conversation, to save ingestion tokens. Skips conversion when the
+raw JSON itself is the deliverable (editing, piping to another JSON
+consumer, saving for later). Maintains a living registry of known
+JSON-emitting commands that grows as new ones are discovered.
+
+See [`plugins/json-to-toon/skills/json-to-toon/SKILL.md`](plugins/json-to-toon/skills/json-to-toon/SKILL.md).
 
 ## Repository layout
 
