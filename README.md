@@ -34,6 +34,20 @@ JSON-emitting commands that grows as new ones are discovered.
 
 See [`plugins/json-to-toon/skills/json-to-toon/SKILL.md`](plugins/json-to-toon/skills/json-to-toon/SKILL.md).
 
+Measured token savings on real command output (`tiktoken`, `cl100k_base` /
+`o200k_base` — an approximation of the actual Sonnet 5 tokenizer, not an
+exact count):
+
+| Source | JSON tokens | TOON tokens | Savings |
+|---|---|---|---|
+| `mnemon status` (tabular) | 481 | 195 | 59.5% |
+| `mnemon search` (free-text) | 2521 | 2310 | 8.4% |
+
+Savings scale with how tabular the data is: uniform arrays of objects
+collapse into `key[N]{fields}:` header + rows, while prose-heavy fields
+(e.g. long `content` strings) don't compress much beyond removing JSON
+punctuation.
+
 ## Repository layout
 
 Follows the [Claude Code plugin marketplace schema](https://code.claude.com/docs/en/plugin-marketplaces):
