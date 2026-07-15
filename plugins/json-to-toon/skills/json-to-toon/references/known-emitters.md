@@ -19,4 +19,4 @@ triggers JSON output, and one example invocation.
 | npm | `--json` on `ls`, `outdated`, `audit` | `npm ls --json \| json2toon.py` |
 | snyk-agent-scan | `--json` | `snyk-agent-scan --json \| json2toon.py` |
 | jq | any `jq` filter (already JSON in, JSON out by default) | `curl ... \| jq . \| json2toon.py` |
-| mnemon | unconfirmed — verify actual flag on first use, then update this row | `mnemon ??? \| json2toon.py` |
+| mnemon | default stdout is JSON, no flag needed - confirmed on `status` and `search`; other data-returning subcommands (`recall`, `related`, `log`, `store`, `viz`) likely match but are unconfirmed | `mnemon search "query" \| json2toon.py` |
