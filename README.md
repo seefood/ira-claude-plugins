@@ -9,6 +9,7 @@ installable plugin marketplace.
 /plugin marketplace add seefood/ira-claude-plugins
 /plugin install test-before-install@ira-claude-plugins
 /plugin install json-to-toon@ira-claude-plugins
+/plugin install debugging-with-the-scientific-method@ira-claude-plugins
 ```
 
 ## Plugins
@@ -47,6 +48,14 @@ Savings scale with how tabular the data is: uniform arrays of objects
 collapse into `key[N]{fields}:` header + rows, while prose-heavy fields
 (e.g. long `content` strings) don't compress much beyond removing JSON
 punctuation.
+
+### debugging-with-the-scientific-method
+
+Replaces ad hoc "try this, try that" debugging with a written lab-notebook
+log of hypothesis, experiment, and result — one falsifiable hypothesis at a
+time, forcing precision and preventing repeated dead ends.
+
+See [`plugins/debugging-with-the-scientific-method/skills/debugging-with-the-scientific-method/SKILL.md`](plugins/debugging-with-the-scientific-method/skills/debugging-with-the-scientific-method/SKILL.md).
 
 ## Repository layout
 

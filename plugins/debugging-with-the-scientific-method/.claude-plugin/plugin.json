@@ -1,0 +1,8 @@
+{
+  "author": {
+    "name": "Ira Abramov"
+  },
+  "description": "Debug with a written lab-notebook log of hypothesis, experiment, and result instead of ad hoc guessing.",
+  "name": "debugging-with-the-scientific-method",
+  "version": "1.0.0"
+}
