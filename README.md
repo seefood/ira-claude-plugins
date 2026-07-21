@@ -57,6 +57,8 @@ time, forcing precision and preventing repeated dead ends.
 
 See [`plugins/debugging-with-the-scientific-method/skills/debugging-with-the-scientific-method/SKILL.md`](plugins/debugging-with-the-scientific-method/skills/debugging-with-the-scientific-method/SKILL.md).
 
+Method and example adapted from Noam Elfanbaum's [debugging-with-the-scientific-method](https://github.com/noamelf/debugging-with-the-scientific-method).
+
 ## Repository layout
 
 Follows the [Claude Code plugin marketplace schema](https://code.claude.com/docs/en/plugin-marketplaces):
